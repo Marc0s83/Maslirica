@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="shortcut icon" href="/imagenes/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div id="logo">
+            <img src="../imagenes/logo.png" alt="logo de Maslirica">
+       </div>   
+            <nav class="menu">
+                <ul id="navbar">
+                    <li class="menu__inicio"><a href="../index.html">Inicio</a></li> 
+                    <li class="menu__materiales"><a href="../paginas/materiales.html">Materiales</a></li>
+                    <li class="menu__accesorios"><a href="../paginas/accesorios.html">Accesorios</a></li>
+                    <li class="menu__cursos"><a href="../paginas/cursos.html">Cursos</a></li>
+                    <li class="menu__contacto"><a href="../paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <main class="redes">
+                <p>Redes</p>
+                <a href="https://www.instagram.com/maslirica/?hl=es"><img src="../imagenes/580b57fcd9996e24bc43c521.png" alt="Instagram"></a>
+                <a href="https://es-la.facebook.com/lirica.lirica.5"><img src="../imagenes/584ac2d03ac3a570f94a666d.png" alt="Facebook"></a>
+            </main>
+            
+        </header>
+    <h2>Formulario</h2>
+    <form action="enviar.php" method="get" enctype="text/plain">
+        <div>
+            <label for="nombre:">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <br>
+        <div>        
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Correo electronico" required>
+        </div>
+        <br>
+        <div>
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass" placeholder="Contraseña">
+        </div>
+        <br>
+        <div>
+            <label for="adjunto">Adjuntar</label>
+            <input type="file" id="adjunto">
+        </div>
+        <br>
+        <div>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="5">Comentario</textarea>
+        </div>
+        <br>
+        <div>
+            <label for="">Quieres recibir notificaciones?</label>
+            <input type="radio" name="noti" value="1">Si
+            <input type="radio" name="noti" value="2">No
+        </div>
+        <br>
+
+
+        <br>
+        <input type="submit" value="Enviar ahora">
+        <input type="reset" value="Borrar todo">
+    </form>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.3138210438133!2d-58.39314738435129!3d-34.798045775313916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd33f72a911e5%3A0xb04f27ac1fe3e13a!2sBenigno%20Macias%20672%2C%20B1846%20Adrogu%C3%A9%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1651377714326!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+</html>
